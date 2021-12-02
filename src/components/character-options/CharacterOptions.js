@@ -1,13 +1,17 @@
 import React from 'react';
 import './CharacterOptions.css';
 
-export default function CharacterOptions({ head, setHead, shirt, setShirt }) {
+export default function CharacterOptions({ head, setHead, shirt, setShirt, pant, setPant }) {
   const handleHead = (e) => {
     setHead(e.target.value);
   };
 
   const handleShirt = (e) => {
     setShirt(e.target.value);
+  };
+
+  const handlePant = (e) => {
+    setPant(e.target.value);
   };
 
   return (
@@ -35,7 +39,7 @@ export default function CharacterOptions({ head, setHead, shirt, setShirt }) {
 
         <label>
           Bottoms
-          <select>
+          <select value={pant} onChange={handlePant}>
             <option value="denim-shorts">Denim Shorts</option>
             <option value="pants">Pants</option>
             <option value="swim-shorts">Swim Shorts</option>
