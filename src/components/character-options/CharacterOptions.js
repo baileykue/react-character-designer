@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CharacterOptions.css';
 
-export default function CharacterOptions() {
+export default function CharacterOptions({ head, setHead }) {
+  const handleHead = (e) => {
+    setHead(e.target.value);
+  };
   return (
     <>
       <div>
         <label>
           Head
-          <select>
+          <select value={head} onChange={handleHead}>
             <option value="hampster">Hampster</option>
             <option value="hen">Hen</option>
             <option value="tiger">Tiger</option>
