@@ -40,14 +40,14 @@ export default function Main() {
         {!!headCount && <p>You have changed the head {headCount} times.</p>}
         {!!shirtCount && <p>You have changed the shirt {shirtCount} times.</p>}
         {!!pantCount && <p>You have changed bottoms {pantCount} times.</p>}
-        {!!phraseList.length && (
+        {
           <div className="spacing">
             Your catch-phrases are:
             {phraseList.map((elem) => (
               <p key={elem}>{elem}</p>
             ))}
           </div>
-        )}
+        }
       </div>
       <CharacterDisplay className="spacing" {...{ head, shirt, pant }} />
     </div>
