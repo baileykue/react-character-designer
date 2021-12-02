@@ -1,17 +1,30 @@
 import React from 'react';
 import './CharacterOptions.css';
 
-export default function CharacterOptions({ head, setHead, shirt, setShirt, pant, setPant }) {
+export default function CharacterOptions({
+  head,
+  setHead,
+  setHeadCount,
+  shirt,
+  setShirt,
+  setShirtCount,
+  pant,
+  setPant,
+  setPantCount,
+}) {
   const handleHead = (e) => {
     setHead(e.target.value);
+    setHeadCount((prevState) => prevState + 1);
   };
 
   const handleShirt = (e) => {
     setShirt(e.target.value);
+    setShirtCount((prevState) => prevState + 1);
   };
 
   const handlePant = (e) => {
     setPant(e.target.value);
+    setPantCount((prevState) => prevState + 1);
   };
 
   return (
