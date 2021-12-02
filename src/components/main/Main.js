@@ -13,6 +13,9 @@ export default function Main() {
   const [shirtCount, setShirtCount] = useState(0);
   const [pantCount, setPantCount] = useState(0);
 
+  const [phrase, setPhrase] = useState('');
+  const [phraseList, setPhraseList] = useState([]);
+
   return (
     <div>
       <CharacterOptions
@@ -26,12 +29,24 @@ export default function Main() {
           pant,
           setPant,
           setPantCount,
+          phrase,
+          setPhrase,
+          phraseList,
+          setPhraseList,
         }}
       />
       <CharacterDisplay {...{ head, shirt, pant }} />
       {!!headCount && <p>You have changed the head {headCount} times.</p>}
       {!!shirtCount && <p>You have changed the shirt {shirtCount} times.</p>}
       {!!pantCount && <p>You have changed bottoms {pantCount} times.</p>}
+      {!!phraseList.length && (
+        <div>
+          Your catch-phrases are:
+          {phraseList.map((elem) => (
+            <p key={elem}>{elem}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

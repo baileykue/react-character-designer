@@ -11,6 +11,9 @@ export default function CharacterOptions({
   pant,
   setPant,
   setPantCount,
+  phrase,
+  setPhrase,
+  setPhraseList,
 }) {
   const handleHead = (e) => {
     setHead(e.target.value);
@@ -25,6 +28,11 @@ export default function CharacterOptions({
   const handlePant = (e) => {
     setPant(e.target.value);
     setPantCount((prevState) => prevState + 1);
+  };
+
+  const handlePhrase = () => {
+    setPhraseList((prevState) => [...prevState, phrase]);
+    setPhrase('');
   };
 
   return (
@@ -62,8 +70,8 @@ export default function CharacterOptions({
 
         <label>
           Give your character a catch-phrase
-          <input />
-          <button>Add</button>
+          <input type="text" value={phrase} onChange={(e) => setPhrase(e.target.value)} />
+          <button onClick={handlePhrase}>Add</button>
         </label>
       </div>
     </>
