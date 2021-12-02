@@ -32,6 +32,11 @@ export default function CharacterOptions() {
             <option value="trousers">Trousers</option>
           </select>
         </label>
+        <label>
+          Give your character a catch-phrase
+          <input />
+          <button>Add</button>
+        </label>
       </div>
     </>
   );
