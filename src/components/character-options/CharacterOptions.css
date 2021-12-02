@@ -1,0 +1,24 @@
+.left {
+  position: absolute;
+  left: -20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-stack {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}

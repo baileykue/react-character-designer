@@ -37,9 +37,9 @@ export default function CharacterOptions({
 
   return (
     <>
-      <div>
-        <label>
-          Head
+      <div className="left">
+        <label className="label-stack">
+          Head:
           <select value={head} onChange={handleHead}>
             <option value="hampster">Hampster</option>
             <option value="hen">Hen</option>
@@ -48,8 +48,8 @@ export default function CharacterOptions({
           </select>
         </label>
 
-        <label>
-          Shirt
+        <label className="label-stack">
+          Shirt:
           <select value={shirt} onChange={handleShirt}>
             <option value="blue-shirt">Blue Shirt</option>
             <option value="red-shirt">Red Shirt</option>
@@ -58,8 +58,8 @@ export default function CharacterOptions({
           </select>
         </label>
 
-        <label>
-          Bottoms
+        <label className="label-stack">
+          Bottoms:
           <select value={pant} onChange={handlePant}>
             <option value="denim-shorts">Denim Shorts</option>
             <option value="pants">Pants</option>
@@ -68,8 +68,8 @@ export default function CharacterOptions({
           </select>
         </label>
 
-        <label>
-          Give your character a catch-phrase
+        <label className="label-stack">
+          Give your character a catch-phrase:
           <input type="text" value={phrase} onChange={(e) => setPhrase(e.target.value)} />
           <button onClick={handlePhrase}>Add</button>
         </label>

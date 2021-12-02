@@ -1,0 +1,21 @@
+.right {
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  width: 155px;
+}
+
+.shirt {
+  width: 200px;
+}
+
+.pant {
+  width: 200px;
+}
