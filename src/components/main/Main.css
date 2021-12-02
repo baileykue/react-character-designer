@@ -1,0 +1,19 @@
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.spacing {
+  margin: 50px;
+}
+
+.phrases {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}

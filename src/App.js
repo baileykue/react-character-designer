@@ -5,7 +5,7 @@ import Main from './components/main/Main';
 
 function App() {
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <div className="background" style={{ backgroundImage: `url(${background})` }}>
       <Main />
     </div>
   );

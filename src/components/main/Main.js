@@ -17,8 +17,9 @@ export default function Main() {
   const [phraseList, setPhraseList] = useState([]);
 
   return (
-    <div>
+    <div className="two-columns">
       <CharacterOptions
+        className="spacing"
         {...{
           head,
           setHead,
@@ -35,18 +36,20 @@ export default function Main() {
           setPhraseList,
         }}
       />
-      <CharacterDisplay {...{ head, shirt, pant }} />
-      {!!headCount && <p>You have changed the head {headCount} times.</p>}
-      {!!shirtCount && <p>You have changed the shirt {shirtCount} times.</p>}
-      {!!pantCount && <p>You have changed bottoms {pantCount} times.</p>}
-      {!!phraseList.length && (
-        <div>
-          Your catch-phrases are:
-          {phraseList.map((elem) => (
-            <p key={elem}>{elem}</p>
-          ))}
-        </div>
-      )}
+      <div className="spacing phrases">
+        {!!headCount && <p>You have changed the head {headCount} times.</p>}
+        {!!shirtCount && <p>You have changed the shirt {shirtCount} times.</p>}
+        {!!pantCount && <p>You have changed bottoms {pantCount} times.</p>}
+        {!!phraseList.length && (
+          <div className="spacing">
+            Your catch-phrases are:
+            {phraseList.map((elem) => (
+              <p key={elem}>{elem}</p>
+            ))}
+          </div>
+        )}
+      </div>
+      <CharacterDisplay className="spacing" {...{ head, shirt, pant }} />
     </div>
   );
 }
