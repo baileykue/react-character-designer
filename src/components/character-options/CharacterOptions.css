@@ -23,9 +23,10 @@
 
 button {
   background-color: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding: 5px 15px 5px 15px;
-  margin: 5px;
+  margin: 15px;
   font-family: 'East Sea Dokdo', cursive;
   font-size: 35px;
   color: rgba(0, 0, 0, 0.8);
@@ -33,11 +34,12 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.9);
 }
 
 input {
+  border: 3px solid rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 5px;
   font-family: 'East Sea Dokdo', cursive;
@@ -47,6 +49,7 @@ input {
 }
 
 select {
+  border: 3px solid rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 5px;
 }
