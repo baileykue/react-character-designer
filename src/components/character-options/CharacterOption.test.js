@@ -3,19 +3,20 @@ import CharacterOptions from './CharacterOptions';
 
 test('renders the given', () => {
   const container = render(
-    <CharacterOption 
-    head="hampster",
-    setHead=,
-    setHeadCount,
-    shirt="yellow-shirt",
-    setShirt,
-    setShirtCount,
-    pant="trousers",
-    setPant,
-    setPantCount,
-    phrase,
-    setPhrase,
-    setPhraseList, />
+    <CharacterOptions
+      head="hampster"
+      setHead="hen"
+      setHeadCount="1"
+      shirt="yellow-shirt"
+      setShirt="red-shirt"
+      setShirtCount="1"
+      pant="trousers"
+      setPant="pants"
+      setPantCount="1"
+      phrase="woohoo"
+      setPhrase="why-not"
+      setPhraseList="['woohoo', 'why-not']"
+    />
   );
   expect(container).toMatchSnapshot;
 });
