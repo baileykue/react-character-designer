@@ -16,11 +16,11 @@
   border: 3px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding: 20px;
-  line-height: 15px;
+  line-height: 50px;
   text-align: center;
 }
 
 .phrases p {
   margin-bottom: 50px;
-  line-height: 15px;
+  line-height: 50px;
 }
